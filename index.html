@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simpl3 Customs — Ingeniería & Personalización Automotriz</title>
+<meta name="description" content="Simpl3 Customs — Diagnóstico, mantenimiento y personalización automotriz especializada en Quito.">
+<style>
+:root{
+  --bg:#0b0d0e; --panel:#121516; --panel2:#181b1c; --text:#f1f3f3;
+  --muted:#9da4a5; --silver:#c9ced0; --line:#2a2e2f; --accent:#3b9a89;
+  --accent2:#52b6a2; --max:1180px; --radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+background:var(--bg);color:var(--text);line-height:1.55;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(11,13,14,.76);
+backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:-1px;font-size:23px}
+.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:26px;color:#c8cccd;font-size:14px}
+.navlinks a:hover{color:white}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:13px;
+font-weight:800;font-size:14px;transition:.25s ease;border:1px solid var(--line)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:white;box-shadow:0 8px 30px rgba(59,154,137,.2)}
+.btn-primary:hover{transform:translateY(-2px);background:var(--accent2);box-shadow:0 12px 35px rgba(59,154,137,.3)}
+.btn-ghost{background:#151819;color:#e9ebeb}
+.btn-ghost:hover{border-color:#555;transform:translateY(-2px)}
+.hero{min-height:760px;display:flex;align-items:center;padding:130px 0 80px;
+background:radial-gradient(circle at 75% 35%,rgba(59,154,137,.16),transparent 32%),
+radial-gradient(circle at 20% 80%,rgba(255,255,255,.05),transparent 30%),
+linear-gradient(135deg,#080a0b 0%,#111415 55%,#0b0d0e 100%);position:relative}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,10,11,.9),rgba(8,10,11,.25));pointer-events:none}
+.hero-content{position:relative;z-index:2;max-width:760px}
+.kicker{display:inline-flex;gap:8px;align-items:center;border:1px solid #303637;border-radius:999px;
+padding:7px 12px;color:#c9cecf;background:rgba(255,255,255,.035);font-size:12px;font-weight:800;letter-spacing:.5px;text-transform:uppercase}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 15px var(--accent)}
+h1{font-size:clamp(45px,7vw,84px);line-height:.96;letter-spacing:-4px;margin:22px 0}
+h1 em{font-style:normal;color:var(--silver)}
+.lead{font-size:clamp(17px,2vw,21px);color:#b9c0c1;max-width:650px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.stats{display:flex;gap:34px;margin-top:50px;padding-top:24px;border-top:1px solid rgba(255,255,255,.09)}
+.stat strong{display:block;font-size:22px}.stat span{font-size:12px;color:var(--muted)}
+.section{padding:100px 0}
+.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:38px}
+.eyebrow{color:var(--accent2);font-size:12px;text-transform:uppercase;font-weight:900;letter-spacing:1.5px}
+h2{font-size:clamp(32px,4vw,54px);line-height:1.02;letter-spacing:-2px;margin-top:10px}
+.section-head p{max-width:470px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);
+padding:28px;min-height:235px;transition:.3s ease;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;width:130px;height:130px;right:-55px;top:-55px;border-radius:50%;
+background:rgba(59,154,137,.08);transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:#3b5550;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.card:hover:before{transform:scale(1.35)}
+.icon{width:46px;height:46px;border-radius:13px;background:#202526;border:1px solid #303536;
+display:grid;place-items:center;font-size:20px;margin-bottom:25px}
+.card h3{font-size:20px;margin-bottom:8px}.card p{color:var(--muted);font-size:14px}
+.process{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.step{padding:27px 20px;background:#101314;border-right:1px solid var(--line);min-height:190px}
+.step:last-child{border-right:0}.num{color:var(--accent);font-size:12px;font-weight:900}
+.step h3{margin:25px 0 7px;font-size:17px}.step p{font-size:13px;color:var(--muted)}
+.feature{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}
+.panel{border:1px solid var(--line);border-radius:var(--radius);padding:45px;background:linear-gradient(145deg,#171a1b,#0f1112)}
+.panel.large{min-height:390px;display:flex;flex-direction:column;justify-content:end;
+background:radial-gradient(circle at 75% 25%,rgba(59,154,137,.18),transparent 25%),linear-gradient(145deg,#181b1c,#0d0f10)}
+.panel h3{font-size:34px;letter-spacing:-1px}.panel p{color:var(--muted);max-width:600px;margin:13px 0 22px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}.pill{font-size:12px;border:1px solid #343a3b;padding:7px 10px;border-radius:999px;color:#c3c8c9}
+.cta{padding:80px 0}.cta-box{border:1px solid #36544f;border-radius:28px;padding:55px;
+background:radial-gradient(circle at 85% 15%,rgba(59,154,137,.2),transparent 28%),#111516;
+display:flex;align-items:center;justify-content:space-between;gap:35px}.cta-box h2{max-width:650px}.cta-box p{color:var(--muted);margin-top:14px}
+footer{border-top:1px solid var(--line);padding:35px 0;color:#7f8788;font-size:12px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px}.brandline{color:#d5d9da;font-weight:800}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+.float-wa{position:fixed;right:20px;bottom:20px;z-index:40;width:58px;height:58px;border-radius:50%;background:var(--accent);
+display:grid;place-items:center;font-size:24px;box-shadow:0 12px 35px rgba(0,0,0,.45);animation:pulse 2.2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(59,154,137,.3),0 12px 35px rgba(0,0,0,.45)}
+50%{box-shadow:0 0 0 10px rgba(59,154,137,0),0 15px 40px rgba(0,0,0,.5)}}
+@media(max-width:850px){
+ .navlinks{display:none}.hero{min-height:700px}.stats{gap:18px;flex-wrap:wrap}
+ .section{padding:75px 0}.section-head{display:block}.section-head p{margin-top:18px}
+ .grid{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr}
+ .step{border-right:0;border-bottom:1px solid var(--line);min-height:auto}.step:last-child{border-bottom:0}
+ .feature{grid-template-columns:1fr}.cta-box{display:block;padding:36px 28px}.cta-box .btn{margin-top:25px}
+}
+@media(max-width:560px){
+ .container{width:min(calc(100% - 28px),var(--max))}
+ .nav-inner{height:68px}.nav .btn{padding:10px 13px;font-size:12px}
+ h1{letter-spacing:-2.5px}.hero{padding-top:110px}.hero-actions .btn{width:100%}
+ .grid{grid-template-columns:1fr}.card{min-height:205px}.panel{padding:30px}
+ .stats{margin-top:35px}.stat strong{font-size:18px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="#">Simpl<span>3</span> Customs</a>
+    <div class="navlinks">
+      <a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#filosofia">Filosofía</a>
+    </div>
+    <a class="btn btn-primary" href="https://wa.me/5930993017483?text=Hola%20Simpl3%20Customs%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20diagn%C3%B3stico" target="_blank" rel="noopener">Agendar</a>
+  </div>
+</nav>
+
+<main>
+<section class="hero">
+  <div class="container hero-content reveal">
+    <div class="kicker"><span class="dot"></span> Quito · Atención especializada</div>
+    <h1>Tu vehículo...<br><em>Analizado.</em> Recuperado. Mejorado.</h1>
+    <p class="lead">Diagnóstico, mantenimiento y personalización automotriz para vehículos seleccionados. Tecnología, criterio técnico y una experiencia diseñada para quienes exigen más.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://wa.me/5930993017483?text=Hola%20Simpl3%20Customs%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20diagn%C3%B3stico" target="_blank" rel="noopener">💬 Agendar por WhatsApp</a>
+      <a class="btn btn-ghost" href="#servicios">Explorar servicios ↓</a>
+    </div>
+    <div class="stats">
+  <div class="stat">
+    <strong>01</strong>
+    <h3>Diagnósticar<br><em>antes de intervenir.</em></h3>
+  </div>
+
+  <div class="stat">
+    <strong>02</strong>
+    <h3>Proceso<br><em>trazable.</em></h3>
+  </div>
+
+  <div class="stat">
+    <strong>03</strong>
+    <h3>Verificación<br><em>Garantizada.</em></h3>
+  </div>
+</div>
+</section>
+
+<section class="section" id="servicios">
+<div class="container">
+  <div class="section-head reveal">
+    <div><div class="eyebrow">Lo que hacemos</div><h2>Ingeniería aplicada<br>al vehículo real.</h2></div>
+    <p>No se trata solo de reparar o instalar. Cada intervención parte de entender el problema, definir una solución y verificar el resultado.</p>
+  </div>
+  <div class="grid">
+    <article class="card reveal"><div class="icon">⌁</div><h3>Diagnóstico automotriz</h3><p>Lectura y análisis electrónico, identificación de síntomas y pruebas orientadas a encontrar la causa antes de reemplazar componentes.</p></article>
+    <article class="card reveal"><div class="icon">⚙</div><h3>Mantenimiento preventivo</h3><p>Intervenciones planificadas para conservar confiabilidad, funcionamiento y desempeño del vehículo.</p></article>
+    <article class="card reveal"><div class="icon">🔧</div><h3>Mantenimiento correctivo</h3><p>Corrección de fallas con una metodología que prioriza seguridad, diagnóstico y validación posterior.</p></article>
+    <article class="card reveal"><div class="icon">✦</div><h3>Pintura & estética</h3><p>Mejoras visuales y acabados seleccionados para elevar la presencia del vehículo sin perder coherencia.</p></article>
+    <article class="card reveal"><div class="icon">▣</div><h3>Entretenimiento</h3><p>Pantallas, integración tecnológica y soluciones orientadas a mejorar la experiencia a bordo.</p></article>
+    <article class="card reveal"><div class="icon">◉</div><h3>Sonido</h3><p>Configuraciones de audio enfocadas en calidad, integración y una experiencia sonora equilibrada.</p></article>
+  </div>
+</div>
+</section>
+
+<section class="section" id="proceso">
+<div class="container">
+  <div class="section-head reveal">
+    <div><div class="eyebrow">Método Simpl3</div><h2>Primero entendemos.<br>Después intervenimos.</h2></div>
+    <p>Un flujo pensado para reducir decisiones basadas en suposiciones y aumentar la trazabilidad del trabajo.</p>
+  </div>
+  <div class="process reveal">
+    <div class="step"><span class="num">01</span><h3>Recepción</h3><p>Escuchamos síntomas, objetivos y antecedentes.</p></div>
+    <div class="step"><span class="num">02</span><h3>Diagnóstico</h3><p>Recopilamos evidencia técnica relevante.</p></div>
+    <div class="step"><span class="num">03</span><h3>Propuesta</h3><p>Definimos alcance, prioridades y solución.</p></div>
+    <div class="step"><span class="num">04</span><h3>Intervención</h3><p>Ejecutamos el trabajo acordado.</p></div>
+    <div class="step"><span class="num">05</span><h3>Verificación</h3><p>Comprobamos el resultado antes de entregar.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="filosofia">
+<div class="container feature">
+  <div class="panel large reveal">
+    <div><div class="eyebrow">Vehículos seleccionados</div>
+    <h3>No buscamos volumen.<br>Buscamos resultado.</h3>
+    <p>Simpl3 Customs está concebido para clientes que valoran el diagnóstico, la calidad de ejecución y la personalización con criterio.</p>
+    <div class="pills"><span class="pill">Gasolina</span><span class="pill">Turbo</span><span class="pill">Diésel</span><span class="pill">Híbridos</span><span class="pill">Tecnología</span></div>
+  </div>
+  <div class="panel reveal">
+    <div class="eyebrow">Personalización</div>
+    <h3>Hazlo tuyo.</h3>
+    <p>Desde estética hasta tecnología embarcada: construimos una propuesta coherente con el vehículo y con lo que quieres experimentar.</p>
+    <a class="btn btn-ghost" href="https://wa.me/5930993017483?text=Hola%20Simpl3%20Customs%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20diagn%C3%B3stico" target="_blank" rel="noopener">Consultar proyecto →</a>
+  </div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+  <div class="cta-box reveal">
+    <div><div class="eyebrow">¿Qué necesita tu vehículo?</div><h2>Cuéntanos el problema.<br>Nosotros empezamos por el diagnóstico.</h2><p>Escríbenos por WhatsApp para revisar tu caso y determinar el siguiente paso.</p></div>
+    <a class="btn btn-primary" href="https://wa.me/5930993017483?text=Hola%20Simpl3%20Customs%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20diagn%C3%B3stico" target="_blank" rel="noopener">💬 Hablar con Simpl3 Customs</a>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer-inner">
+  <div class="brandline">Simpl3 Customs</div>
+  <div>Diagnóstico · Mantenimiento · Personalización · Quito, Ecuador</div>
+</div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/5930993017483?text=Hola%20Simpl3%20Customs%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20diagn%C3%B3stico" target="_blank" rel="noopener" aria-label="WhatsApp">◔</a>
+
+<script>
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
