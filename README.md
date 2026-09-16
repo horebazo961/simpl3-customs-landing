@@ -15,7 +15,7 @@ Este repositorio está preparado para **Cloudflare Pages**:
 5. Output directory: `/` (o vacío)
 6. Deploy
 
-La URL pública será del tipo `https://simpl3-customs-landing.pages.dev` (o el nombre que elijas).
+La URL pública será del tipo `https://simpl3-customs.dev` (o el nombre que elijas).
 
 ## WhatsApp CTA
 
