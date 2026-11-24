@@ -1,0 +1,1333 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070909">
+<meta name="description" content="Diagnóstico electrónico multimarca en el sur de Quito desde US$20 con 20% OFF. Escáner, osciloscopio y reporte explicado. Autorizas antes de reparar. Agenda por WhatsApp.">
+<title>Diagnóstico electrónico en Quito · US$20 | Multimakina</title>
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_EC">
+<meta property="og:site_name" content="Multimakina_QuitoEc">
+<meta property="og:title" content="Diagnóstico electrónico en Quito · US$20 con 20% OFF">
+<meta property="og:description" content="Baches, fisuras y frenadas castigan tu vehículo. Un diagnóstico con reporte explicado te dice qué revisar primero. Sur de Quito.">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<noscript><style>
+  .reveal{opacity:1!important;transform:none!important}
+  .menu-toggle{display:none!important}
+  @media(max-width:980px){
+    .nav-links{display:flex!important;flex-wrap:wrap;gap:8px 16px;font-size:13px}
+    .nav-cta{display:none}
+    .mobile-bar{display:none}
+    body{padding-bottom:0}
+  }
+</style></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Multimakina_QuitoEc",
+  "telephone": "+593993017483",
+  "areaServed": {"@type": "City", "name": "Quito", "containedInPlace": {"@type": "AdministrativeArea", "name": "Pichincha, Ecuador"}},
+  "description": "Diagnóstico electrónico multimarca y mantenimiento automotriz en el sur de Quito. Evaluación con escáner y osciloscopio, reporte explicado y autorización previa antes de cualquier intervención.",
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"17:00"}
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {"@type": "Service", "name": "Diagnóstico electrónico multimarca"},
+      "price": "20",
+      "priceCurrency": "USD",
+      "description": "Diagnóstico con escáner y osciloscopio, reporte explicado. 20% OFF por tiempo limitado."
+    },
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mantenimientos: correctivo, preventivo, programado y deductivo"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Aditivos y lubricantes"}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"¿El diagnóstico incluye la reparación?","acceptedAnswer":{"@type":"Answer","text":"No. El diagnóstico identifica y explica los hallazgos. Cualquier reparación, repuesto o mantenimiento se cotiza por separado y solo se ejecuta cuando tú autorizas."}},
+    {"@type":"Question","name":"¿Qué incluye el diagnóstico de US$20?","acceptedAnswer":{"@type":"Answer","text":"Incluye escáner multimarca, revisión con osciloscopio, lectura e interpretación de códigos de falla, explicación de hallazgos y recomendación del siguiente paso. No incluye repuestos ni mano de obra de reparación."}},
+    {"@type":"Question","name":"¿Atienden cualquier marca de vehículo?","acceptedAnswer":{"@type":"Answer","text":"El diagnóstico es multimarca. Al agendar por WhatsApp confirma marca, modelo y año para verificar la cobertura del equipo."}},
+    {"@type":"Question","name":"¿Necesito cita para el diagnóstico?","acceptedAnswer":{"@type":"Answer","text":"Se recomienda coordinar por WhatsApp para asegurar el cupo. Los sábados y domingos se atiende con agenda; se priorizan los mantenimientos programados."}},
+    {"@type":"Question","name":"¿Qué pasa si no encuentran ninguna falla?","acceptedAnswer":{"@type":"Answer","text":"Te explicamos los hallazgos y los mantenimientos recomendados según el estado real del vehículo. No se propone una reparación que no corresponda."}},
+    {"@type":"Question","name":"¿Cómo aplico el 20% OFF?","acceptedAnswer":{"@type":"Answer","text":"Menciona la promoción al escribir por WhatsApp. Aplica únicamente al diagnóstico electrónico, está sujeta a disponibilidad y tiene vigencia limitada."}},
+    {"@type":"Question","name":"¿Puedo dejar el auto si tengo pico y placa?","acceptedAnswer":{"@type":"Answer","text":"Sí, previa coordinación. Puedes dejarlo a primera hora y retirarlo cuando termine la restricción."}}
+  ]
+}
+</script>
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   SISTEMA VISUAL — Landing v1.0
+   Referencia: SPEC_LANDING.md → §3 tokens, §4 arquitectura CSS,
+   §5 componentes. Regla: usar tokens y clases; evitar estilos inline.
+   ═══════════════════════════════════════════════════════════════ */
+:root{
+  --bg:#070909;
+  --bg-soft:#0a0d0d;
+  --panel:#0f1414;
+  --panel-2:#131919;
+  --panel-3:#182020;
+  --text:#f2f6f5;
+  --muted:#95a1a0;
+  --silver:#c8d2d0;
+  --line:#222a2a;
+  --line-strong:#334040;
+  --accent:#46c7ab;
+  --accent-2:#7ae3cd;
+  --accent-ink:#031310;
+  --hot:#ffb454;
+  --hot-ink:#1d1202;
+  --max:1240px;
+  --pad:clamp(20px,4.5vw,64px);
+  --radius:14px;
+  --radius-sm:10px;
+  --display:"Sora","Inter",Arial,sans-serif;
+  --sans:"Inter",Arial,sans-serif;
+  --shadow:0 24px 70px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:var(--sans);font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body.menu-open{overflow:hidden}
+img,svg{display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+::selection{background:rgba(70,199,171,.28);color:#fff}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.035em;line-height:1.08}
+.wrap{width:min(var(--max),calc(100% - 2 * var(--pad)));margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:absolute;left:16px;top:-70px;z-index:200;padding:12px 18px;border-radius:8px;background:var(--accent);color:var(--accent-ink);font-weight:700;transition:top .2s ease}
+.skip-link:focus{top:12px}
+.icon{width:20px;height:20px;flex:none}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent-2);outline-offset:4px;border-radius:4px}
+
+/* ── Header ─────────────────────────────────────── */
+.site-header{
+  position:sticky;top:0;z-index:80;
+  background:rgba(7,9,9,.82);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(34,42,42,.9);
+}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px;position:relative}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-mark{
+  width:38px;height:38px;display:grid;place-items:center;flex:none;
+  border-radius:11px;border:1px solid rgba(70,199,171,.55);
+  background:linear-gradient(145deg,rgba(70,199,171,.18),rgba(70,199,171,.04));
+  color:var(--accent);font-family:var(--display);font-size:21px;font-weight:700;line-height:1;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+}
+.brand-copy{display:block;min-width:0;white-space:nowrap;font-size:14px;font-weight:700;letter-spacing:.01em}
+.brand-copy small{display:block;margin-top:2px;color:var(--muted);font-size:9px;font-weight:500;letter-spacing:.15em;text-transform:uppercase}
+.nav-right{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px)}
+.nav-links{display:flex;align-items:center;gap:clamp(14px,2.2vw,26px);color:var(--muted);font-size:12px;font-weight:600}
+.nav-links a{padding:8px 0;transition:color .2s ease;position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:1px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.nav-links a:hover,.nav-links a.active{color:var(--text)}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 16px;border-radius:8px;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:700;transition:background .2s ease,transform .2s ease}
+.nav-cta:hover{background:var(--accent-2);transform:translateY(-1px)}
+.nav-cta .icon{width:16px;height:16px}
+.mobile-nav-cta{display:none}
+.menu-toggle{display:none;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid var(--line-strong);border-radius:10px;background:transparent;color:var(--text);cursor:pointer}
+.menu-icon,.menu-icon::before,.menu-icon::after{display:block;width:17px;height:1.5px;background:var(--accent);transition:transform .2s ease,opacity .2s ease,background .2s ease}
+.menu-icon{position:relative}
+.menu-icon::before,.menu-icon::after{content:"";position:absolute;left:0}
+.menu-icon::before{transform:translateY(-5px)}
+.menu-icon::after{transform:translateY(5px)}
+.menu-toggle[aria-expanded="true"] .menu-icon{background:transparent}
+.menu-toggle[aria-expanded="true"] .menu-icon::before{transform:rotate(45deg)}
+.menu-toggle[aria-expanded="true"] .menu-icon::after{transform:rotate(-45deg)}
+
+/* ── Hero ───────────────────────────────────────── */
+.hero{position:relative;isolation:isolate;overflow:hidden;border-bottom:1px solid var(--line);background:var(--bg)}
+.hero::before{
+  content:"";position:absolute;z-index:-2;inset:0;
+  background:
+    radial-gradient(ellipse 60% 55% at 76% 44%,rgba(70,199,171,.14),transparent 70%),
+    radial-gradient(ellipse 45% 40% at 12% 0%,rgba(70,199,171,.07),transparent 70%),
+    linear-gradient(180deg,#070909,var(--bg-soft));
+}
+.hero::after{
+  content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:68px 68px;
+  mask-image:radial-gradient(ellipse 70% 60% at 62% 42%,#000 20%,transparent 78%);
+  -webkit-mask-image:radial-gradient(ellipse 70% 60% at 62% 42%,#000 20%,transparent 78%);
+}
+.hero-grid{
+  display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);
+  align-items:center;gap:clamp(2rem,5vw,4.5rem);
+  padding-block:clamp(44px,7vh,86px) clamp(52px,8vh,96px);
+  min-height:calc(100svh - 74px);
+}
+.hero-copy{min-width:0;max-width:660px}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:9px;margin:0 0 22px;
+  padding:7px 12px;border:1px solid rgba(70,199,171,.32);border-radius:999px;
+  background:rgba(70,199,171,.07);color:var(--accent-2);
+  font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+}
+.pulse{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(70,199,171,.6);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(70,199,171,.55)}70%{box-shadow:0 0 0 8px rgba(70,199,171,0)}100%{box-shadow:0 0 0 0 rgba(70,199,171,0)}}
+.hero h1{max-width:15ch;margin:0 0 20px;font-size:clamp(2.55rem,5.4vw,4.9rem);font-weight:800;line-height:1.03}
+.hero h1 em{display:block;margin-top:6px;color:var(--silver);font-style:normal;font-weight:600}
+.hero h1 em::after{content:"";display:inline-block;width:.42em;height:.42em;margin-left:.22em;border-radius:50%;background:var(--accent);vertical-align:.12em}
+.lede{max-width:50ch;margin:0 0 30px;color:var(--muted);font-size:clamp(14px,1.35vw,16px);line-height:1.8}
+.lede strong{color:var(--silver);font-weight:600}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:54px;padding:0 24px;border:1px solid transparent;border-radius:10px;
+  font-size:13px;font-weight:700;letter-spacing:.01em;cursor:pointer;
+  transition:transform .2s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+.btn .icon{width:18px;height:18px;transition:transform .2s ease}
+.btn-primary{
+  background:linear-gradient(180deg,#5adcc0,#3fb79d);color:var(--accent-ink);
+  box-shadow:0 10px 30px rgba(70,199,171,.22),inset 0 1px 0 rgba(255,255,255,.35);
+}
+.btn-primary:hover{transform:translateY(-2px);background:linear-gradient(180deg,#75e8cf,#4ac7ab);box-shadow:0 16px 38px rgba(70,199,171,.3),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn-primary:hover .icon{transform:translateX(2px)}
+.btn-ghost{border-color:var(--line-strong);background:rgba(255,255,255,.02);color:var(--text)}
+.btn-ghost:hover{border-color:rgba(70,199,171,.5);background:rgba(70,199,171,.08);transform:translateY(-2px)}
+.btn-block{width:100%}
+.hero-trust{display:flex;flex-wrap:wrap;gap:10px 22px;margin:24px 0 0;padding:0;list-style:none;color:var(--muted);font-size:11.5px}
+.hero-trust li{display:flex;align-items:center;gap:7px}
+.hero-trust .icon{width:14px;height:14px;color:var(--accent)}
+.hero-offer{
+  display:inline-flex;align-items:center;gap:9px;margin-top:26px;padding:8px 12px;
+  border:1px solid rgba(255,180,84,.3);border-radius:8px;background:rgba(255,180,84,.07);
+  color:var(--hot);font-size:11px;font-weight:600;
+}
+.hero-offer b{font-weight:800;letter-spacing:.02em}
+.hero-offer .timer{font-variant-numeric:tabular-nums;color:#ffd39a;font-weight:700;letter-spacing:.03em}
+
+/* Tarjeta visual de diagnóstico */
+.hero-visual{position:relative;min-width:0;width:100%;max-width:470px;justify-self:end;padding:18px 10px}
+.diag-card{
+  position:relative;z-index:2;width:100%;padding:18px;
+  border:1px solid rgba(70,199,171,.22);border-radius:18px;
+  background:linear-gradient(160deg,rgba(24,32,32,.96),rgba(12,16,16,.98));
+  box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.05);
+  overflow:hidden;
+}
+.diag-card::after{
+  content:"";position:absolute;left:0;right:0;top:-40%;height:40%;pointer-events:none;
+  background:linear-gradient(180deg,transparent,rgba(70,199,171,.07),transparent);
+  animation:scan 6s linear infinite;
+}
+@keyframes scan{0%{top:-40%}100%{top:110%}}
+.diag-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.diag-live{display:inline-flex;align-items:center;gap:7px;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-2)}
+.diag-live i{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px rgba(70,199,171,.8)}
+.diag-id{font-size:10px;color:var(--muted);letter-spacing:.1em;font-variant-numeric:tabular-nums}
+.diag-main{display:flex;align-items:center;gap:18px;padding:22px 2px 18px}
+.gauge{
+  --p:66;
+  width:124px;height:124px;flex:none;border-radius:50%;
+  background:conic-gradient(var(--accent) calc(var(--p)*1%),#232c2c 0);
+  display:grid;place-items:center;position:relative;
+  box-shadow:0 0 36px rgba(70,199,171,.1);
+}
+.gauge::before{content:"";position:absolute;inset:10px;border-radius:50%;background:#0d1212;border:1px solid var(--line)}
+.gauge-inner{position:relative;text-align:center;line-height:1}
+.gauge-num{display:block;font-family:var(--display);font-size:34px;font-weight:700;color:var(--text)}
+.gauge-inner small{display:block;margin-top:5px;color:var(--muted);font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+.diag-copy{min-width:0}
+.diag-copy span{display:block;color:var(--accent-2);font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.diag-copy strong{display:block;margin:7px 0 4px;font-family:var(--display);font-size:17px;font-weight:600;line-height:1.25}
+.diag-copy em{display:block;color:var(--muted);font-size:11px;font-style:normal}
+.diag-list{display:grid;gap:0;margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.diag-list li{display:flex;align-items:center;gap:10px;padding:11px 2px;border-bottom:1px solid var(--line);font-size:11.5px;color:var(--silver)}
+.diag-list .dot{width:6px;height:6px;border-radius:50%;flex:none}
+.dot.ok{background:var(--accent);box-shadow:0 0 8px rgba(70,199,171,.5)}
+.dot.warn{background:var(--hot);box-shadow:0 0 8px rgba(255,180,84,.5)}
+.diag-list b{margin-left:auto;font-size:9.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.diag-list li.warn b{color:var(--hot)}
+.diag-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;font-size:10px;color:var(--muted)}
+.diag-foot .ok-badge{display:inline-flex;align-items:center;gap:5px;color:var(--accent-2);font-weight:600}
+.diag-foot .ok-badge .icon{width:13px;height:13px}
+.float-tag{
+  position:absolute;z-index:3;display:flex;flex-direction:column;gap:1px;
+  padding:10px 13px;border-radius:10px;border:1px solid var(--line-strong);
+  background:rgba(14,19,19,.97);box-shadow:0 12px 30px rgba(0,0,0,.45);
+  font-size:16px;font-weight:800;line-height:1.1;
+}
+.float-tag small{font-size:8.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.float-offer{top:-14px;right:-8px;border-color:rgba(255,180,84,.4);color:var(--hot);transform:rotate(3deg)}
+
+/* ── Barra de confianza ─────────────────────────── */
+.proof{border-bottom:1px solid var(--line);background:rgba(11,14,14,.6)}
+.proof-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.proof-item{display:flex;align-items:center;gap:12px;padding:20px 22px;border-right:1px solid var(--line)}
+.proof-item:last-child{border-right:0}
+.proof-item .icon{width:19px;height:19px;color:var(--accent)}
+.proof-item span{font-size:11px;font-weight:600;color:var(--silver);line-height:1.35}
+.proof-item small{display:block;margin-top:2px;color:var(--muted);font-size:9.5px;font-weight:500;letter-spacing:.02em}
+
+/* ── Secciones ──────────────────────────────────── */
+.section{padding:clamp(64px,8vw,96px) 0;border-bottom:1px solid var(--line)}
+.section--panel{background:linear-gradient(180deg,var(--bg-soft),var(--bg))}
+.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.55fr);align-items:end;gap:clamp(20px,4vw,60px);margin-bottom:clamp(30px,4vw,48px)}
+.eyebrow{display:flex;align-items:center;gap:11px;margin:0 0 16px;color:var(--accent-2);font-size:10px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--accent-2)}
+.section-head h2{max-width:18ch;margin:0;font-size:clamp(2.1rem,4.2vw,3.4rem);line-height:1.03;letter-spacing:-.045em}
+.section-head h2 em{color:var(--accent);font-style:normal}
+.section-head>p{margin:0;color:var(--muted);font-size:12.5px;line-height:1.85}
+.section-head>p strong{color:var(--silver);font-weight:600}
+
+/* Señales */
+.signals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.signal-card{
+  position:relative;display:flex;flex-direction:column;min-height:210px;
+  padding:22px 20px;border:1px solid var(--line);border-radius:var(--radius);
+  background:linear-gradient(165deg,rgba(20,26,26,.9),rgba(13,17,17,.9));
+  transition:border-color .25s ease,transform .25s ease,background .25s ease;
+}
+.signal-card:hover{border-color:rgba(70,199,171,.4);transform:translateY(-3px);background:linear-gradient(165deg,rgba(24,32,32,.95),rgba(14,18,18,.95))}
+.signal-icon{width:36px;height:36px;display:grid;place-items:center;border-radius:9px;border:1px solid rgba(255,180,84,.28);background:rgba(255,180,84,.08);color:var(--hot);margin-bottom:18px}
+.signal-icon .icon{width:18px;height:18px}
+.signal-card .num{position:absolute;top:22px;right:20px;color:var(--line-strong);font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.12em}
+.signal-card h3{margin:0 0 8px;font-size:16px;font-weight:600;letter-spacing:-.02em;line-height:1.3}
+.signal-card p{margin:0;color:var(--muted);font-size:11.5px;line-height:1.7}
+.signal-card .flag{display:flex;align-items:center;gap:6px;margin-top:auto;padding-top:16px;color:var(--silver);font-size:10px;font-weight:600;letter-spacing:.03em}
+.signal-card .flag .icon{width:13px;height:13px;color:var(--hot)}
+.qualify{
+  display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+  margin-top:24px;padding:22px 26px;border:1px solid rgba(70,199,171,.28);border-radius:var(--radius);
+  background:linear-gradient(120deg,rgba(70,199,171,.1),rgba(70,199,171,.03));
+}
+.qualify p{margin:0;color:var(--silver);font-size:13px;line-height:1.55;max-width:58ch}
+.qualify p strong{color:var(--text)}
+.qualify .btn{min-height:46px;padding:0 20px;font-size:12px;flex:none}
+.disclaimer{margin:14px 0 0;color:#7d8887;font-size:10px;line-height:1.6}
+
+/* Servicios */
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start;margin-top:14px}
+.service-card{
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);
+  overflow:hidden;transition:border-color .25s ease,background .25s ease;
+}
+.service-card:hover{border-color:rgba(70,199,171,.35)}
+.service-card[open]{border-color:rgba(70,199,171,.42);background:linear-gradient(180deg,#111717,var(--panel))}
+.service-card summary{display:block;cursor:pointer;list-style:none;padding:24px 22px;outline:none}
+.service-card summary::-webkit-details-marker{display:none}
+.service-card summary::marker{content:""}
+.service-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.service-num{color:var(--accent-2);font-size:10px;font-weight:700;letter-spacing:.14em}
+.service-tag{font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:4px 7px;border-radius:4px}
+.service-tag.hot{color:var(--hot);border-color:rgba(255,180,84,.35);background:rgba(255,180,84,.07)}
+.service-title{display:block;margin:0 0 9px;font-family:var(--display);font-size:20px;font-weight:600;letter-spacing:-.03em;line-height:1.2}
+.service-desc{display:block;margin:0;color:var(--muted);font-size:11.5px;line-height:1.75}
+.service-expand{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px;padding-top:15px;border-top:1px solid var(--line);color:var(--accent-2);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.service-expand .plus{position:relative;width:14px;height:14px;transition:transform .25s ease}
+.service-expand .plus::before,.service-expand .plus::after{content:"";position:absolute;background:var(--accent);top:50%;left:50%;transform:translate(-50%,-50%)}
+.service-expand .plus::before{width:12px;height:1.5px}
+.service-expand .plus::after{width:1.5px;height:12px}
+.service-card[open] .service-expand .plus{transform:rotate(45deg)}
+.card-body{padding:0 22px 22px;border-top:1px solid var(--line)}
+.card-body>*:first-child{margin-top:16px}
+.card-body p{margin:0 0 10px;color:var(--muted);font-size:11.5px;line-height:1.8}
+.card-body p strong{color:var(--silver);font-weight:600}
+.card-body ul{margin:10px 0 12px;padding-left:17px;color:var(--muted);font-size:11.5px;line-height:1.75}
+.card-body li{margin-bottom:7px}
+.card-body li strong{color:var(--silver);font-weight:600}
+.card-body .cat-title{display:block;margin:16px 0 5px;color:var(--accent-2);font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+.card-body .card-cta{display:inline-flex;align-items:center;gap:6px;margin-top:6px;color:var(--accent-2);font-size:11px;font-weight:700}
+.card-body .card-cta .icon{width:14px;height:14px}
+.card-note{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:10px!important;color:#7d8887!important}
+
+/* Pasos */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--panel)}
+.step{position:relative;padding:26px 24px;border-right:1px solid var(--line)}
+.step:last-child{border-right:0}
+.step small{display:flex;align-items:center;gap:8px;margin-bottom:18px;color:var(--accent-2);font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.step small b{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;border:1px solid rgba(70,199,171,.4);color:var(--accent);font-size:9px}
+.step h3{margin:0 0 7px;font-size:18px;font-weight:600;letter-spacing:-.02em}
+.step p{margin:0;color:var(--muted);font-size:11.5px;line-height:1.7}
+.step .step-note{display:inline-flex;align-items:center;gap:5px;margin-top:14px;color:var(--accent-2);font-size:9.5px;font-weight:600}
+.step .step-note .icon{width:12px;height:12px}
+
+/* Oferta */
+.offer-wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);border:1px solid rgba(70,199,171,.3);border-radius:18px;overflow:hidden;background:linear-gradient(150deg,rgba(23,33,32,.98),rgba(12,16,16,.99));box-shadow:0 30px 90px rgba(0,0,0,.45)}
+.offer-main{padding:clamp(26px,4vw,44px)}
+.offer-pill{display:inline-flex;align-items:center;gap:7px;margin-bottom:18px;padding:6px 10px;border-radius:5px;background:var(--hot);color:var(--hot-ink);font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.offer-main .kicker{display:block;margin-bottom:8px;color:var(--accent-2);font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+.offer-main h2{margin:0 0 14px;font-size:clamp(1.9rem,3.2vw,2.7rem);line-height:1.05;letter-spacing:-.04em}
+.offer-price{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:6px 0 4px}
+.price-old{color:var(--muted);font-size:17px;font-weight:500;text-decoration:line-through;text-decoration-color:rgba(255,180,84,.6);text-decoration-thickness:1px}
+.price-now{font-family:var(--display);font-size:clamp(3.2rem,6vw,4.6rem);font-weight:700;line-height:.95;letter-spacing:-.05em;color:var(--text)}
+.price-label{color:var(--accent-2);font-size:10.5px;font-weight:600}
+.price-note{margin:10px 0 24px;color:var(--muted);font-size:11px;line-height:1.7}
+.includes{display:grid;grid-template-columns:1fr 1fr;gap:9px 18px;margin:0;padding:20px 0 0;list-style:none;border-top:1px solid var(--line)}
+.includes li{display:flex;align-items:flex-start;gap:8px;color:var(--silver);font-size:11.5px;line-height:1.5}
+.includes .icon{width:14px;height:14px;margin-top:2px;color:var(--accent)}
+.offer-side{display:flex;flex-direction:column;justify-content:center;gap:14px;padding:clamp(26px,4vw,40px);border-left:1px solid var(--line);background:rgba(0,0,0,.18)}
+.timer-box{padding:16px;border:1px solid var(--line);border-radius:10px;background:rgba(7,9,9,.55)}
+.timer-box small{display:block;margin-bottom:7px;color:var(--muted);font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.timer-box .timer{font-family:var(--display);font-size:clamp(1.7rem,3vw,2.1rem);font-weight:600;letter-spacing:.04em;font-variant-numeric:tabular-nums;color:var(--hot)}
+.timer-box .timer.expired{font-size:13px;color:var(--muted);letter-spacing:0}
+.offer-side .btn{min-height:56px}
+.offer-side .micro{margin:0;text-align:center;color:var(--muted);font-size:9.5px;line-height:1.65}
+.offer-side .micro strong{color:var(--silver);font-weight:600}
+.offer-side .divider{height:1px;background:var(--line);margin:2px 0}
+.status{display:inline-flex;align-items:center;gap:7px;color:var(--silver);font-size:10.5px;font-weight:600}
+.status .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(70,199,171,.14);flex:none}
+.status.closed .dot{background:var(--hot);box-shadow:0 0 0 3px rgba(255,180,84,.14)}
+.status small{display:block;color:var(--muted);font-size:9px;font-weight:500}
+
+/* FAQ */
+.faq{max-width:860px;margin-inline:auto;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 2px;cursor:pointer;list-style:none;font-family:var(--display);font-size:15px;font-weight:600;letter-spacing:-.01em;color:var(--text)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::marker{content:""}
+.faq summary:hover{color:var(--accent-2)}
+.faq .chev{position:relative;width:16px;height:16px;flex:none;transition:transform .25s ease}
+.faq .chev::before,.faq .chev::after{content:"";position:absolute;top:50%;left:50%;width:10px;height:1.5px;background:var(--accent);transform:translate(-50%,-50%)}
+.faq .chev::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq details[open] .chev::after{transform:translate(-50%,-50%) rotate(0)}
+.faq details p{margin:0;padding:0 40px 22px 2px;color:var(--muted);font-size:12px;line-height:1.85}
+.faq details p strong{color:var(--silver)}
+.faq-head{grid-template-columns:1fr;text-align:center;margin-bottom:28px}
+.faq-head .eyebrow{justify-content:center}
+.faq-head h2{max-width:none}
+.disclaimer.center{text-align:center}
+.faq-wrap{background:linear-gradient(180deg,var(--bg),var(--bg-soft))}
+
+/* Horario */
+.hours-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--panel)}
+.hours-main{padding:clamp(24px,4vw,38px)}
+.hours-main h3{margin:12px 0 20px;font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.04em}
+.schedule{display:grid;gap:0;margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.schedule li{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line);font-size:11.5px;color:var(--muted)}
+.schedule li b{color:var(--silver);font-weight:600}
+.schedule li span{font-variant-numeric:tabular-nums}
+.schedule li.today{color:var(--text)}
+.schedule li.today b::after{content:"Hoy";margin-left:8px;padding:2px 6px;border-radius:3px;background:rgba(70,199,171,.14);color:var(--accent-2);font-size:8px;font-weight:700;letter-spacing:.08em;vertical-align:1px}
+.hours-tip{display:flex;gap:10px;margin-top:18px;padding:13px 14px;border:1px solid rgba(255,180,84,.22);border-radius:8px;background:rgba(255,180,84,.06);color:var(--silver);font-size:11px;line-height:1.6}
+.hours-tip .icon{width:16px;height:16px;color:var(--hot);margin-top:2px}
+.hours-side{display:flex;flex-direction:column;justify-content:center;gap:16px;padding:clamp(24px,4vw,38px);border-left:1px solid var(--line);background:linear-gradient(160deg,rgba(70,199,171,.07),transparent)}
+.hours-side h4{margin:0;font-family:var(--display);font-size:16px;font-weight:600;letter-spacing:-.02em}
+.hours-side p{margin:0;color:var(--muted);font-size:11.5px;line-height:1.75}
+.hours-side .mini-list{display:grid;gap:9px;margin:0;padding:0;list-style:none}
+.hours-side .mini-list li{display:flex;align-items:flex-start;gap:8px;color:var(--silver);font-size:11px;line-height:1.5}
+.hours-side .mini-list .icon{width:13px;height:13px;margin-top:2px;color:var(--accent)}
+.hours-side .btn{min-height:48px;font-size:12px}
+
+/* CTA final */
+.final{position:relative;overflow:hidden;padding:clamp(56px,8vw,92px) 0;border-bottom:1px solid var(--line);text-align:center;background:radial-gradient(ellipse 60% 100% at 50% 100%,rgba(70,199,171,.14),transparent 70%),var(--bg)}
+.final .eyebrow{justify-content:center}
+.final h2{max-width:20ch;margin:0 auto 16px;font-size:clamp(2rem,4.6vw,3.6rem);line-height:1.04;letter-spacing:-.05em}
+.final p{max-width:54ch;margin:0 auto 26px;color:var(--muted);font-size:13px;line-height:1.8}
+.final-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.final .hero-trust{justify-content:center;margin-top:22px}
+
+/* Footer */
+.footer{padding:30px 0 26px;background:var(--bg);color:var(--muted);font-size:10.5px}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-links{display:flex;flex-wrap:wrap;gap:18px}
+.footer a{color:var(--muted);transition:color .2s ease}
+.footer a:hover{color:var(--text)}
+.footer .footer-brand{color:var(--silver);font-weight:600}
+
+/* CTA flotante escritorio */
+.wa-float{
+  position:fixed;z-index:70;right:24px;bottom:24px;
+  display:inline-flex;flex-direction:column;align-items:flex-start;gap:1px;
+  min-height:54px;padding:10px 18px;border:1px solid rgba(70,199,171,.5);border-radius:12px;
+  background:rgba(11,16,16,.96);color:var(--text);
+  box-shadow:0 14px 40px rgba(0,0,0,.55);backdrop-filter:blur(12px);
+  transition:transform .2s ease,border-color .2s ease;
+}
+.wa-float:hover{transform:translateY(-2px);border-color:var(--accent)}
+.wa-float .wa-top{display:flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--accent-2)}
+.wa-float .wa-top .icon{width:15px;height:15px}
+.wa-float .wa-timer{font-size:10px;color:var(--hot);font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:.03em}
+.wa-float .wa-timer.expired{color:var(--muted)}
+
+/* Barra móvil */
+.mobile-bar{display:none;position:fixed;z-index:90;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));padding:8px;border:1px solid var(--line-strong);border-radius:14px;background:rgba(10,13,13,.97);box-shadow:0 16px 40px rgba(0,0,0,.6);backdrop-filter:blur(16px)}
+.mobile-bar-inner{display:flex;align-items:center;gap:10px}
+.mobile-price{flex:1;min-width:0;padding-left:6px}
+.mobile-price strong{display:block;font-size:13px;font-family:var(--display);font-weight:600}
+.mobile-price span{display:block;color:var(--hot);font-size:9.5px;font-weight:600;font-variant-numeric:tabular-nums}
+.mobile-bar .btn{min-height:44px;padding:0 15px;font-size:11.5px;flex:none;border-radius:9px}
+.mobile-bar .icon{width:16px;height:16px}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+.no-js .reveal{opacity:1;transform:none}
+
+@media(max-width:1080px){
+  .signals{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .signal-card{min-height:190px}
+  .service-title{font-size:18px}
+  .hero-visual{max-width:430px}
+}
+@media(max-width:980px){
+  .nav-links{display:none}
+  .nav-cta{display:none}
+  .menu-toggle{display:flex}
+  .nav-links.open{
+    display:flex;position:absolute;top:calc(100% + 1px);left:calc(-1 * var(--pad));right:calc(-1 * var(--pad));
+    flex-direction:column;align-items:stretch;gap:0;
+    padding:12px var(--pad) 22px;background:#070909;
+    border-bottom:1px solid var(--line);box-shadow:0 30px 40px rgba(0,0,0,.55);
+  }
+  .nav-links.open a{padding:15px 0;border-bottom:1px solid var(--line);font-size:14px}
+  .nav-links.open a::after{display:none}
+  .nav-links.open .mobile-nav-cta{display:inline-flex;margin-top:16px;min-height:48px;border:0;color:var(--accent-ink);background:var(--accent);border-radius:8px;justify-content:center;font-size:13px}
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:44px;min-height:0;padding-block:56px 68px}
+  .hero-copy{max-width:640px}
+  .hero h1{max-width:17ch;font-size:clamp(2.5rem,6.4vw,3.8rem)}
+  .hero-visual{max-width:460px;justify-self:center;width:100%}
+  .section-head{grid-template-columns:1fr;gap:16px;align-items:start}
+  .section-head>p{max-width:60ch}
+  .service-grid{grid-template-columns:1fr}
+  .offer-wrap{grid-template-columns:1fr}
+  .offer-side{border-left:0;border-top:1px solid var(--line)}
+  .hours-card{grid-template-columns:1fr}
+  .hours-side{border-left:0;border-top:1px solid var(--line)}
+  .proof-grid{grid-template-columns:repeat(2,1fr)}
+  .proof-item:nth-child(2){border-right:0}
+  .proof-item:nth-child(1),.proof-item:nth-child(2){border-bottom:1px solid var(--line)}
+  .steps{grid-template-columns:1fr}
+  .step{border-right:0;border-bottom:1px solid var(--line)}
+  .step:last-child{border-bottom:0}
+}
+@media(max-width:760px){
+  html{scroll-padding-top:76px}
+  .nav{min-height:66px}
+  body{padding-bottom:82px}
+  .brand-mark{width:34px;height:34px;border-radius:9px;font-size:19px}
+  .brand-copy{font-size:12.5px}
+  .brand-copy small{font-size:8px;letter-spacing:.11em}
+  .hero-grid{padding-block:40px 54px;gap:38px}
+  .hero h1{font-size:clamp(2.3rem,9.5vw,3.2rem);max-width:16ch}
+  .hero h1 em{font-size:.82em}
+  .lede{font-size:14px;line-height:1.75}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .hero-actions .btn{width:100%}
+  .hero-trust{gap:8px 16px;font-size:10.5px}
+  .hero-offer{font-size:10px;width:100%;justify-content:center}
+  .hero-visual{display:flex;flex-direction:column;align-items:stretch;padding:0;max-width:400px}
+  .float-tag{position:static;align-self:flex-end;flex-direction:row;align-items:center;gap:7px;margin:0 2px 8px;padding:8px 12px;font-size:13px;border-radius:8px;transform:none}
+  .float-tag small{letter-spacing:.08em}
+  .diag-main{gap:14px}
+  .gauge{width:104px;height:104px}
+  .gauge-num{font-size:28px}
+  .diag-copy strong{font-size:15px}
+  .signals{grid-template-columns:1fr}
+  .signal-card{min-height:0;padding:20px}
+  .signal-card .flag{padding-top:12px}
+  .qualify{padding:20px;align-items:flex-start;flex-direction:column}
+  .qualify .btn{width:100%}
+  .section-head h2{font-size:clamp(1.95rem,8vw,2.6rem)}
+  .section{padding:60px 0}
+  .offer-main{padding:24px 20px}
+  .offer-side{padding:22px 20px}
+  .includes{grid-template-columns:1fr}
+  .price-now{font-size:clamp(3rem,13vw,3.8rem)}
+  .faq summary{font-size:14px;padding:18px 0}
+  .faq details p{padding-right:8px}
+  .hours-main,.hours-side{padding:22px 20px}
+  .final{padding:56px 0}
+  .final-actions{flex-direction:column}
+  .final-actions .btn{width:100%}
+  .footer{padding-bottom:26px}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+  .wa-float{display:none}
+  .mobile-bar{display:block}
+  .reveal{opacity:1;transform:none}
+  .diag-card::after{animation:none}
+}
+@media(max-width:380px){
+  .brand-copy small{display:none}
+  .diag-live{font-size:9px}
+  .diag-id{display:none}
+  .float-tag{font-size:13px;padding:8px 10px}
+  .hero h1{font-size:2.15rem}
+  .hero-actions .btn-primary{font-size:11.5px;gap:7px;padding:0 15px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#servicios">Saltar al contenido</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.48-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.49-8.41"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2M7 12h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M21 15a9 9 0 1 0-18 0M12 15l4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 11 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 2v5h5M9 13h6M9 17h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3 2.5 20h19L12 3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 9v5M12 17.2v.1" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-engine" viewBox="0 0 24 24"><path d="M6 9h9l3 3h2v4h-3l-2 3H8l-2-3H3v-4h3V9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 6h5M10 3v3M18 12v-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-wave" viewBox="0 0 24 24"><path d="M2 12c2.5 0 2.5-5 5-5s2.5 10 5 10 2.5-10 5-10 2.5 5 5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-brake" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 3v5.8M12 15.2V21M3 12h5.8M15.2 12H21" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-fuel" viewBox="0 0 24 24"><path d="M4 21V5a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v16M3 21h11M4 10h9M17 8l3 3v7a2 2 0 0 1-4 0v-5h-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Multimakina Quito, inicio">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span class="brand-copy">Multimakina_QuitoEc<small>Sur de Quito · Ecuador</small></span>
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links" id="primary-navigation" aria-label="Navegación principal">
+        <a href="#senales">Señales</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#precio">Precio</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="mobile-nav-cta" href="https://wa.me/593993017483?text=Hola%20Multimakina_QuitoEc%2C%20quiero%20agendar%20el%20diagn%C3%B3stico%20electr%C3%B3nico%20con%2020%25%20OFF." target="_blank" rel="noopener noreferrer" data-cta="menu-wa">
+          <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+          Agendar por WhatsApp
+        </a>
+      </nav>
+      <a class="nav-cta" href="https://wa.me/593993017483?text=Hola%20Multimakina_QuitoEc%2C%20quiero%20agendar%20el%20diagn%C3%B3stico%20electr%C3%B3nico%20con%2020%25%20OFF." target="_blank" rel="noopener noreferrer" data-cta="nav-wa">
+        <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+        Agendar
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="menu-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-badge"><span class="pulse" aria-hidden="true"></span> Sur de Quito · Diagnóstico multimarca</p>
+        <h1>Las calles de Quito castigan tu auto. <em>Adelántate al daño.</em></h1>
+        <p class="lede">Baches, fisuras y frenadas constantes desgastan suspensión, frenos y motor. Un diagnóstico electrónico con <strong>reporte explicado</strong> te dice qué revisar primero — antes de que se vuelva una reparación cara.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/593993017483?text=Hola%20Multimakina_QuitoEc%2C%20quiero%20agendar%20el%20diagn%C3%B3stico%20electr%C3%B3nico%20con%2020%25%20OFF." target="_blank" rel="noopener noreferrer" data-cta="hero-wa">
+            <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+            Agendar diagnóstico · <span id="hero-price">US$20</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#servicios">
+            Ver qué incluye
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+        <ul class="hero-trust">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Sin compromiso de reparación</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Tú autorizas antes de intervenir</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Reporte explicado</li>
+        </ul>
+        <div class="hero-offer">
+          <b>20% OFF por tiempo limitado</b>
+          <span aria-hidden="true">·</span>
+          <span class="timer" id="hero-timer">48:00:00</span>
+          <span class="sr-only">La promoción tiene vigencia limitada.</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Ejemplo ilustrativo de un reporte de diagnóstico">
+        <div class="float-tag float-offer">20% OFF<small>Diagnóstico</small></div>
+        <div class="diag-card" role="img" aria-label="Reporte de ejemplo: 3 hallazgos, escáner y osciloscopio, suspensión con observación">
+          <div class="diag-head">
+            <span class="diag-live"><i aria-hidden="true"></i> Escaneo activo</span>
+            <span class="diag-id">MM-0412</span>
+          </div>
+          <div class="diag-main">
+            <div class="gauge" aria-hidden="true">
+              <div class="gauge-inner"><span class="gauge-num">3</span><small>hallazgos</small></div>
+            </div>
+            <div class="diag-copy">
+              <span>Lectura del sistema</span>
+              <strong>Códigos y parámetros</strong>
+              <em>Escáner + osciloscopio</em>
+            </div>
+          </div>
+          <ul class="diag-list">
+            <li><span class="dot ok" aria-hidden="true"></span> Motor y encendido <b>Revisado</b></li>
+            <li class="warn"><span class="dot warn" aria-hidden="true"></span> Suspensión delantera <b>Observación</b></li>
+            <li><span class="dot ok" aria-hidden="true"></span> Sensores y actuadores <b>Revisado</b></li>
+          </ul>
+          <div class="diag-foot">
+            <span>Reporte de ejemplo</span>
+            <span class="ok-badge"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Listo para explicar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="proof" aria-label="Qué respalda el servicio">
+    <div class="wrap proof-grid">
+      <div class="proof-item">
+        <svg class="icon" aria-hidden="true"><use href="#i-scan"/></svg>
+        <span>Escáner multimarca<small>Códigos y parámetros</small></span>
+      </div>
+      <div class="proof-item">
+        <svg class="icon" aria-hidden="true"><use href="#i-gauge"/></svg>
+        <span>Osciloscopio<small>Señales y circuitos</small></span>
+      </div>
+      <div class="proof-item">
+        <svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>
+        <span>Reporte explicado<small>Sin tecnicismos</small></span>
+      </div>
+      <div class="proof-item">
+        <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+        <span>Autorización previa<small>Nada se hace sin tu OK</small></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="senales">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Señales de alerta</p>
+          <h2>¿Tu auto ya te lo está diciendo?</h2>
+        </div>
+        <p>El deterioro de las vías no siempre aparece como una falla evidente. Estos síntomas suelen pasar desapercibidos hasta que el arreglo cuesta más. <strong>Si marcas dos o más, prioriza una revisión.</strong></p>
+      </div>
+
+      <div class="signals">
+        <article class="signal-card reveal">
+          <span class="num">01</span>
+          <div class="signal-icon"><svg class="icon" aria-hidden="true"><use href="#i-engine"/></svg></div>
+          <h3>Check Engine encendido</h3>
+          <p>Testigo fijo o intermitente. Puede ser desde un sensor hasta una falla de encendido que afecta el consumo.</p>
+          <span class="flag"><svg class="icon" aria-hidden="true"><use href="#i-warn"/></svg> No lo tapes con cinta</span>
+        </article>
+        <article class="signal-card reveal">
+          <span class="num">02</span>
+          <div class="signal-icon"><svg class="icon" aria-hidden="true"><use href="#i-wave"/></svg></div>
+          <h3>Ruidos al pasar baches</h3>
+          <p>Golpeteos, crujidos o sensación de inestabilidad en rompemuelles. La suspensión trabaja de más en cada hueco.</p>
+          <span class="flag"><svg class="icon" aria-hidden="true"><use href="#i-warn"/></svg> Revisa antes del próximo viaje</span>
+        </article>
+        <article class="signal-card reveal">
+          <span class="num">03</span>
+          <div class="signal-icon"><svg class="icon" aria-hidden="true"><use href="#i-brake"/></svg></div>
+          <h3>Frenadas más largas</h3>
+          <p>Pedal esponjoso, vibración al frenar o recorrido extra. En Quito, con pendientes, cada metro cuenta.</p>
+          <span class="flag"><svg class="icon" aria-hidden="true"><use href="#i-warn"/></svg> Seguridad primero</span>
+        </article>
+        <article class="signal-card reveal">
+          <span class="num">04</span>
+          <div class="signal-icon"><svg class="icon" aria-hidden="true"><use href="#i-fuel"/></svg></div>
+          <h3>Más consumo o menos fuerza</h3>
+          <p>El auto pierde potencia en subida o el combustible rinde menos. Los parámetros electrónicos pueden explicarlo.</p>
+          <span class="flag"><svg class="icon" aria-hidden="true"><use href="#i-warn"/></svg> Antes de cambiar piezas al azar</span>
+        </article>
+      </div>
+
+      <div class="qualify reveal">
+        <p><strong>¿Marcaste dos o más?</strong> No adivines qué pieza cambiar. Un diagnóstico te muestra el orden correcto de revisión y evita gastos innecesarios.</p>
+        <a class="btn btn-primary" href="https://wa.me/593993017483?text=Hola%20Multimakina_QuitoEc%2C%20tengo%20se%C3%B1ales%20de%20falla%20y%20quiero%20un%20diagn%C3%B3stico." target="_blank" rel="noopener noreferrer" data-cta="signals-wa">
+          <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+          Contar mi caso
+        </a>
+      </div>
+      <p class="disclaimer">Estas señales orientan la revisión, pero no confirman por sí solas una falla mecánica. El diagnóstico determina qué está ocurriendo en tu vehículo.</p>
+    </div>
+  </section>
+
+  <section class="section section--panel" id="servicios">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Servicios</p>
+          <h2>Un proceso claro, sin sorpresas en la factura.</h2>
+        </div>
+        <p>Primero evaluamos, después te explicamos y solo intervenimos cuando apruebas la cotización. <strong>Así decides con información, no por presión.</strong></p>
+      </div>
+
+      <div class="steps reveal" aria-label="Cómo trabajamos">
+        <div class="step">
+          <small><b>01</b> Revisión especializada</small>
+          <h3>Evaluamos</h3>
+          <p>El estado real del vehículo con escáner, osciloscopio y equipo técnico calificado.</p>
+          <span class="step-note"><svg class="icon" aria-hidden="true"><use href="#i-scan"/></svg> Datos, no suposiciones</span>
+        </div>
+        <div class="step">
+          <small><b>02</b> Reporte detallado</small>
+          <h3>Te explicamos</h3>
+          <p>Qué encontramos, qué significa y cuánto cuesta resolverlo, con una cotización clara.</p>
+          <span class="step-note"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg> Sin tecnicismos</span>
+        </div>
+        <div class="step">
+          <small><b>03</b> Trabajo autorizado</small>
+          <h3>Intervenimos</h3>
+          <p>Solo después de que apruebas la cotización. Tú mantienes el control de la decisión.</p>
+          <span class="step-note"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> Cero trabajos sorpresa</span>
+        </div>
+      </div>
+
+      <div class="service-grid">
+        <details class="service-card reveal" open>
+          <summary>
+            <span class="service-top">
+              <span class="service-num">SERVICIO 01</span>
+              <span class="service-tag hot">Recomendado</span>
+            </span>
+            <span class="service-title" role="heading" aria-level="3">Diagnóstico electrónico multimarca</span>
+            <span class="service-desc">El punto de partida para saber qué revisar y en qué orden. Incluye explicación de hallazgos.</span>
+            <span class="service-expand">Ver detalle <span class="plus" aria-hidden="true"></span></span>
+          </summary>
+          <div class="card-body">
+            <p><strong>Escáner automotriz:</strong> lectura e interpretación de códigos de falla y parámetros electrónicos del vehículo.</p>
+            <p><strong>Osciloscopio:</strong> análisis de señales eléctricas de sensores, actuadores y circuitos para confirmar el origen.</p>
+            <p>Terminamos con un reporte explicado y una recomendación concreta del siguiente paso. Si no hay falla, también te lo decimos.</p>
+            <p class="card-note">No incluye reparación ni repuestos. La intervención se cotiza por separado.</p>
+            <a class="card-cta" href="#precio">Ver precio del diagnóstico <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </details>
+
+        <details class="service-card reveal">
+          <summary>
+            <span class="service-top">
+              <span class="service-num">SERVICIO 02</span>
+              <span class="service-tag">Cotización previa</span>
+            </span>
+            <span class="service-title" role="heading" aria-level="3">Mantenimientos</span>
+            <span class="service-desc">Correctivo, preventivo, programado y deductivo. Definimos el alcance antes de tocar el vehículo.</span>
+            <span class="service-expand">Ver los 4 tipos <span class="plus" aria-hidden="true"></span></span>
+          </summary>
+          <div class="card-body">
+            <ul>
+              <li><strong>Correctivo:</strong> corrige fallas ya identificadas.</li>
+              <li><strong>Preventivo:</strong> reduce el riesgo de fallas y desgaste prematuro.</li>
+              <li><strong>Programado:</strong> según intervalos, uso y recomendaciones del fabricante.</li>
+              <li><strong>Deductivo:</strong> definido a partir de hallazgos y síntomas del vehículo.</li>
+            </ul>
+            <p class="card-note">La intervención inicia únicamente con tu autorización.</p>
+          </div>
+        </details>
+
+        <details class="service-card reveal">
+          <summary>
+            <span class="service-top">
+              <span class="service-num">SERVICIO 03</span>
+              <span class="service-tag">Asesoría</span>
+            </span>
+            <span class="service-title" role="heading" aria-level="3">Aditivos y lubricantes</span>
+            <span class="service-desc">Orientación según vehículo, kilometraje y sistema. Sin vender por vender.</span>
+            <span class="service-expand">Ver categorías <span class="plus" aria-hidden="true"></span></span>
+          </summary>
+          <div class="card-body">
+            <span class="cat-title">1. Antifricción y protección del motor</span>
+            <p>Aditivos que se mezclan con el aceite para reducir desgaste metálico. Ejemplos de alta rotación: Liqui Moly Cera Tec, Oil Additiv MoS2, Mannol Ester, Bardahl B1–B2 y Rislone.</p>
+            <span class="cat-title">2. Limpieza interna y tapafugas</span>
+            <p>Limpieza de lodos antes del cambio de aceite y tratamiento de pérdidas menores: Engine Flush, Oil Verlust Stop y líneas Bardahl Engine Tune Up / No Smoke.</p>
+            <span class="cat-title">3. Transmisión, dirección y refrigeración</span>
+            <p>Fluidos y refrigerantes para la altitud y el clima de Quito: aceites 75W-90 / 80W-90 / ATF, aditivos de caja, refrigerantes Dex-Cool y líquidos de frenos DOT 3/4/5.1.</p>
+            <p class="card-note">Indícanos el sistema y el kilometraje del vehículo para orientar una opción compatible. No sustituye una revisión mecánica.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="precio">
+    <div class="wrap">
+      <div class="offer-wrap reveal">
+        <div class="offer-main">
+          <span class="offer-pill" id="price-badge">20% OFF · Tiempo limitado</span>
+          <span class="kicker">Diagnóstico electrónico multimarca</span>
+          <h2>Empieza por saber qué tiene. No por cambiar piezas.</h2>
+          <div class="offer-price">
+            <span class="price-old" id="price-old">US$25</span>
+            <span class="price-now" id="price-now">US$20</span>
+            <span class="price-label" id="price-label">con descuento activo</span>
+          </div>
+          <p class="price-note">Evaluación electrónica inicial con equipos profesionales para identificar y explicar los hallazgos del vehículo.</p>
+          <ul class="includes">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Escáner multimarca</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Revisión con osciloscopio</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Lectura de códigos de falla</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Explicación de hallazgos</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Recomendación del siguiente paso</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Sin compromiso de reparación</li>
+          </ul>
+        </div>
+        <div class="offer-side">
+          <div class="timer-box">
+            <small>La oferta termina en</small>
+            <div class="timer" id="price-countdown" aria-hidden="true">48:00:00</div>
+            <span class="sr-only">La oferta de diagnóstico tiene vigencia limitada.</span>
+          </div>
+          <a class="btn btn-primary btn-block" href="https://wa.me/593993017483?text=Hola%20Multimakina_QuitoEc%2C%20quiero%20agendar%20el%20diagn%C3%B3stico%20con%2020%25%20OFF." target="_blank" rel="noopener noreferrer" data-cta="offer-wa">
+            <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+            Reservar por WhatsApp
+          </a>
+          <p class="micro"><strong>Coordina tu cupo.</strong> Confirma marca, modelo y año para verificar cobertura.</p>
+          <div class="divider"></div>
+          <div class="status" id="offer-status">
+            <span class="dot" aria-hidden="true"></span>
+            <span><span id="offer-status-text">Lun–Vie 07:00–18:00</span><small>Confirmamos disponibilidad por WhatsApp</small></span>
+          </div>
+          <a class="btn btn-ghost btn-block" href="tel:+593993017483" data-cta="offer-call">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            Llamar al +593 99 301 7483
+          </a>
+        </div>
+      </div>
+      <p class="disclaimer center">El diagnóstico no incluye reparaciones, repuestos ni mantenimientos. Esos valores se cotizan por separado y requieren tu autorización.</p>
+    </div>
+  </section>
+
+  <section class="section faq-wrap" id="preguntas">
+    <div class="wrap">
+      <div class="section-head faq-head reveal">
+        <div>
+          <p class="eyebrow">Antes de agendar</p>
+          <h2>Preguntas que conviene resolver.</h2>
+        </div>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>¿El diagnóstico incluye la reparación?<span class="chev" aria-hidden="true"></span></summary>
+          <p>No. El diagnóstico identifica y explica los hallazgos. Cualquier reparación, repuesto o mantenimiento se cotiza por separado y solo se ejecuta cuando tú autorizas.</p>
+        </details>
+        <details>
+          <summary>¿Qué incluye el diagnóstico de US$20?<span class="chev" aria-hidden="true"></span></summary>
+          <p>Incluye escáner multimarca, revisión con osciloscopio, lectura e interpretación de códigos de falla, explicación de hallazgos y recomendación del siguiente paso. <strong>No incluye repuestos ni mano de obra de reparación.</strong></p>
+        </details>
+        <details>
+          <summary>¿Atienden cualquier marca de vehículo?<span class="chev" aria-hidden="true"></span></summary>
+          <p>El diagnóstico es multimarca. Al agendar por WhatsApp confirma marca, modelo y año para verificar la cobertura del equipo.</p>
+        </details>
+        <details>
+          <summary>¿Necesito cita para el diagnóstico?<span class="chev" aria-hidden="true"></span></summary>
+          <p>Se recomienda coordinar por WhatsApp para asegurar el cupo. Los sábados y domingos se atiende con agenda; se priorizan los mantenimientos programados.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa si no encuentran ninguna falla?<span class="chev" aria-hidden="true"></span></summary>
+          <p>Te explicamos los hallazgos y los mantenimientos recomendados según el estado real del vehículo. No se propone una reparación que no corresponda.</p>
+        </details>
+        <details>
+          <summary>¿Cómo aplico el 20% OFF?<span class="chev" aria-hidden="true"></span></summary>
+          <p>Menciona la promoción al escribir por WhatsApp. Aplica únicamente al diagnóstico electrónico, está sujeta a disponibilidad y tiene vigencia limitada.</p>
+        </details>
+        <details>
+          <summary>¿Puedo dejar el auto si tengo pico y placa?<span class="chev" aria-hidden="true"></span></summary>
+          <p>Sí, previa coordinación. Puedes dejarlo a primera hora y retirarlo cuando termine la restricción.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="atencion">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Atención</p>
+          <h2>Horario claro. Cupo confirmado.</h2>
+        </div>
+        <p>Organizamos la atención según el horario del taller y la programación de cada servicio. <strong>Confirma tu cupo antes de venir.</strong></p>
+      </div>
+      <div class="hours-card reveal">
+        <div class="hours-main">
+          <div class="status" id="hours-status">
+            <span class="dot" aria-hidden="true"></span>
+            <span><span id="hours-status-text">Consultando horario…</span><small>Hora de Quito (GMT-5)</small></span>
+          </div>
+          <h3>Lunes a viernes · 07:00 a 18:00</h3>
+          <ul class="schedule" id="schedule">
+            <li data-day="1"><b>Lunes</b><span>07:00 – 18:00</span></li>
+            <li data-day="2"><b>Martes</b><span>07:00 – 18:00</span></li>
+            <li data-day="3"><b>Miércoles</b><span>07:00 – 18:00</span></li>
+            <li data-day="4"><b>Jueves</b><span>07:00 – 18:00</span></li>
+            <li data-day="5"><b>Viernes</b><span>07:00 – 18:00</span></li>
+            <li data-day="6"><b>Sábado</b><span>08:00 – 17:00</span></li>
+            <li data-day="0"><b>Domingo</b><span>Solo con agenda</span></li>
+          </ul>
+          <div class="hours-tip">
+            <svg class="icon" aria-hidden="true"><use href="#i-warn"/></svg>
+            <span>¿Hoy tienes <strong>pico y placa</strong>? Déjanos el auto a primera hora y retíralo listo cuando termine la restricción. Coordínalo por WhatsApp.</span>
+          </div>
+        </div>
+        <div class="hours-side">
+          <h4>Antes de venir</h4>
+          <ul class="mini-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Confirma cupo por WhatsApp.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Indica marca, modelo y año.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Cuéntanos qué síntoma notas y desde cuándo.</li>
+          </ul>
+          <p>Atendemos en el sur de Quito. La ubicación exacta se comparte al confirmar tu cita.</p>
+          <a class="btn btn-primary btn-block" href="https://wa.me/593993017483?text=Hola%20Multimakina_QuitoEc%2C%20quiero%20confirmar%20un%20cupo%20para%20diagn%C3%B3stico." target="_blank" rel="noopener noreferrer" data-cta="hours-wa">
+            <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+            Confirmar cupo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <p class="eyebrow">Decide con información</p>
+      <h2>Tu auto no espera a que el ruido se vuelva reparación.</h2>
+      <p>Agenda tu diagnóstico electrónico en el sur de Quito. Revisamos, te explicamos y tú decides el siguiente paso.</p>
+      <div class="final-actions">
+        <a class="btn btn-primary" href="https://wa.me/593993017483?text=Hola%20Multimakina_QuitoEc%2C%20quiero%20agendar%20el%20diagn%C3%B3stico%20electr%C3%B3nico%20con%2020%25%20OFF." target="_blank" rel="noopener noreferrer" data-cta="final-wa">
+          <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+          Agendar diagnóstico · US$20
+        </a>
+        <a class="btn btn-ghost" href="https://app.notion.com/p/41d559b8bac1811cb4ffd84b90170c10" target="_blank" rel="noopener noreferrer" data-cta="final-research">
+          Leer la investigación
+          <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+        </a>
+      </div>
+      <ul class="hero-trust">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Atención de lunes a sábado</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Sur de Quito</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Autorizas antes de reparar</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span><span class="footer-brand">Multimakina_QuitoEc</span> · Sur de Quito, Ecuador · © <span id="year">2026</span></span>
+    <div class="footer-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#precio">Diagnóstico US$20</a>
+      <a href="https://app.notion.com/p/41d559b8bac1811cb4ffd84b90170c10" target="_blank" rel="noopener noreferrer">Investigación vial</a>
+      <a href="https://wa.me/593993017483?text=Hola%20Multimakina_QuitoEc%2C%20quiero%20agendar%20el%20diagn%C3%B3stico%20electr%C3%B3nico." target="_blank" rel="noopener noreferrer" data-cta="footer-wa">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/593993017483?text=Hola%20Multimakina_QuitoEc%2C%20quiero%20agendar%20el%20diagn%C3%B3stico%20electr%C3%B3nico%20con%2020%25%20OFF." target="_blank" rel="noopener noreferrer" aria-label="Agendar diagnóstico por WhatsApp" data-cta="float-wa">
+  <span class="wa-top"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg> 20% OFF en diagnóstico</span>
+  <span class="wa-timer" id="float-timer">Expira en 48:00:00</span>
+</a>
+
+<div class="mobile-bar" aria-label="Acciones rápidas">
+  <div class="mobile-bar-inner">
+    <div class="mobile-price">
+      <strong id="mobile-price">Diagnóstico · US$20</strong>
+      <span id="mobile-timer">20% OFF · 48:00:00</span>
+    </div>
+    <a class="btn btn-primary" href="https://wa.me/593993017483?text=Hola%20Multimakina_QuitoEc%2C%20quiero%20agendar%20el%20diagn%C3%B3stico%20electr%C3%B3nico%20con%2020%25%20OFF." target="_blank" rel="noopener noreferrer" data-cta="mobile-wa">
+      <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+      Agendar
+    </a>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  document.documentElement.classList.remove("no-js");
+
+  /* ── Promoción activa ────────────────────────────────────────────
+     Para rotar el gancho, cambia solo este objeto (precio, textos,
+     duración y clave de almacenamiento). Todos los CTA se actualizan.
+     ──────────────────────────────────────────────────────────────── */
+  var PROMO = {
+    id: "diagnostico-20",
+    badge: "20% OFF · Tiempo limitado",
+    original: "US$25",
+    current: "US$20",
+    label: "con descuento activo",
+    durationMs: 48 * 60 * 60 * 1000,
+    storageKey: "mmq_promo_end_diagnostico20_v2",
+    expiredLabel: "Precio vigente por WhatsApp",
+    expiredCountdown: "Oferta finalizada · consulta disponibilidad",
+    expiredCta: "Consultar disponibilidad"
+  };
+
+  var $ = function (id) { return document.getElementById(id); };
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ── Analítica lista para conectar (GTM / GA4 / Meta) ──────────── */
+  function track(event, params) {
+    window.dataLayer = window.dataLayer || [];
+    try { window.dataLayer.push(Object.assign({ event: event }, params || {})); } catch (e) {}
+    if (typeof window.gtag === "function") {
+      try { window.gtag("event", event, params || {}); } catch (e) {}
+    }
+  }
+  document.addEventListener("click", function (event) {
+    var el = event.target.closest ? event.target.closest("[data-cta]") : null;
+    if (el) track("cta_click", { cta: el.getAttribute("data-cta"), destino: el.getAttribute("href") || "" });
+  });
+
+  /* ── Countdown persistente ─────────────────────────────────────── */
+  function readPromoEnd() {
+    var stored = null;
+    try { stored = localStorage.getItem(PROMO.storageKey); } catch (e) {}
+    if (stored) {
+      var end = parseInt(stored, 10);
+      if (!isNaN(end)) return end;
+    }
+    var fresh = Date.now() + PROMO.durationMs;
+    try { localStorage.setItem(PROMO.storageKey, String(fresh)); } catch (e) {}
+    return fresh;
+  }
+
+  function two(n) { return (n < 10 ? "0" : "") + n; }
+
+  function formatRemaining(ms) {
+    if (ms <= 0) return null;
+    var total = Math.floor(ms / 1000);
+    var h = Math.floor(total / 3600);
+    var m = Math.floor((total % 3600) / 60);
+    var s = total % 60;
+    return two(h) + ":" + two(m) + ":" + two(s);
+  }
+
+  var promoEnd = readPromoEnd();
+  var promoExpired = false;
+
+  function renderPriceState(expired) {
+    var heroPrice = $("hero-price");
+    var oldEl = $("price-old");
+    var nowEl = $("price-now");
+    var labelEl = $("price-label");
+    var badgeEl = $("price-badge");
+    var floatTimer = $("float-timer");
+    var mobileTimer = $("mobile-timer");
+    var mobilePrice = $("mobile-price");
+
+    if (expired) {
+      promoExpired = true;
+      if (heroPrice) heroPrice.textContent = "Consultar";
+      if (nowEl) nowEl.textContent = "Consultar";
+      if (labelEl) labelEl.textContent = "precio vigente por WhatsApp";
+      if (badgeEl) badgeEl.textContent = PROMO.expiredLabel;
+      if (oldEl) oldEl.style.display = "none";
+      if (floatTimer) { floatTimer.textContent = PROMO.expiredCta; floatTimer.classList.add("expired"); }
+      if (mobileTimer) mobileTimer.textContent = "Consulta disponibilidad";
+      if (mobilePrice) mobilePrice.textContent = "Diagnóstico · Consultar";
+      document.body.classList.add("promo-expired");
+    } else {
+      promoExpired = false;
+      if (heroPrice) heroPrice.textContent = PROMO.current;
+      if (nowEl) nowEl.textContent = PROMO.current;
+      if (labelEl) labelEl.textContent = PROMO.label;
+      if (badgeEl) badgeEl.textContent = PROMO.badge;
+      if (oldEl) oldEl.style.display = "";
+      if (floatTimer) floatTimer.classList.remove("expired");
+      if (mobileTimer) mobileTimer.textContent = "20% OFF · " + formatRemaining(promoEnd - Date.now());
+      if (mobilePrice) mobilePrice.textContent = "Diagnóstico · " + PROMO.current;
+      document.body.classList.remove("promo-expired");
+    }
+  }
+
+  function tickPromo() {
+    var remaining = promoEnd - Date.now();
+    var formatted = formatRemaining(remaining);
+    var heroTimer = $("hero-timer");
+    var priceCountdown = $("price-countdown");
+    var floatTimer = $("float-timer");
+    var mobileTimer = $("mobile-timer");
+
+    if (!formatted) {
+      if (heroTimer) heroTimer.textContent = "Finalizada";
+      if (priceCountdown) { priceCountdown.textContent = PROMO.expiredCountdown; priceCountdown.classList.add("expired"); }
+      if (!promoExpired) renderPriceState(true);
+      return;
+    }
+
+    if (promoExpired) renderPriceState(false);
+    if (heroTimer) heroTimer.textContent = formatted;
+    if (priceCountdown) { priceCountdown.textContent = formatted; priceCountdown.classList.remove("expired"); }
+    if (floatTimer) floatTimer.textContent = "Expira en " + formatted;
+    if (mobileTimer) mobileTimer.textContent = "20% OFF · " + formatted;
+  }
+
+  tickPromo();
+  window.setInterval(tickPromo, 1000);
+
+  /* ── Estado de apertura en hora de Quito ───────────────────────── */
+  var SCHEDULE = {
+    0: null,
+    1: [420, 1080],
+    2: [420, 1080],
+    3: [420, 1080],
+    4: [420, 1080],
+    5: [420, 1080],
+    6: [480, 1020]
+  };
+
+  function quitoNow() {
+    var now = new Date();
+    try {
+      var parts = new Intl.DateTimeFormat("en-US", {
+        timeZone: "America/Guayaquil", weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false
+      }).formatToParts(now);
+      var map = {};
+      parts.forEach(function (p) { map[p.type] = p.value; });
+      var dayMap = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+      var hour = parseInt(map.hour, 10) % 24;
+      var minute = parseInt(map.minute, 10);
+      return { day: dayMap[map.weekday], minutes: hour * 60 + minute };
+    } catch (e) {
+      return { day: now.getDay(), minutes: now.getHours() * 60 + now.getMinutes() };
+    }
+  }
+
+  function updateHours() {
+    var q = quitoNow();
+    var range = SCHEDULE[q.day];
+    var isOpen = !!range && q.minutes >= range[0] && q.minutes < range[1];
+    var text;
+    if (isOpen) {
+      text = "Abierto ahora · cierra a las " + two(Math.floor(range[1] / 60)) + ":" + two(range[1] % 60);
+    } else if (q.day === 0) {
+      text = "Cerrado · domingos solo con agenda";
+    } else if (range && q.minutes < range[0]) {
+      text = "Cerrado · abre hoy a las " + two(Math.floor(range[0] / 60)) + ":" + two(range[0] % 60);
+    } else {
+      text = "Cerrado · coordina tu cupo por WhatsApp";
+    }
+
+    var offerStatus = $("offer-status");
+    var offerText = $("offer-status-text");
+    var hoursStatus = $("hours-status");
+    var hoursText = $("hours-status-text");
+    if (offerText) offerText.textContent = isOpen ? "Abierto ahora" : "Fuera de horario";
+    if (offerStatus) offerStatus.classList.toggle("closed", !isOpen);
+    if (hoursText) hoursText.textContent = text;
+    if (hoursStatus) hoursStatus.classList.toggle("closed", !isOpen);
+
+    var todayRows = document.querySelectorAll("#schedule li");
+    Array.prototype.forEach.call(todayRows, function (row) {
+      row.classList.toggle("today", parseInt(row.getAttribute("data-day"), 10) === q.day);
+    });
+  }
+  updateHours();
+  window.setInterval(updateHours, 60000);
+
+  /* ── Año ───────────────────────────────────────────────────────── */
+  var yearEl = $("year");
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  /* ── Menú móvil ────────────────────────────────────────────────── */
+  var menuButton = $("menu-toggle");
+  var navigation = $("primary-navigation");
+
+  function closeMenu() {
+    if (!navigation || !menuButton) return;
+    navigation.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "Abrir menú");
+    document.body.classList.remove("menu-open");
+  }
+
+  if (menuButton && navigation) {
+    menuButton.addEventListener("click", function () {
+      var isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      if (isOpen) { closeMenu(); return; }
+      navigation.classList.add("open");
+      menuButton.setAttribute("aria-expanded", "true");
+      menuButton.setAttribute("aria-label", "Cerrar menú");
+      document.body.classList.add("menu-open");
+    });
+    navigation.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeMenu);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") closeMenu();
+    });
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 980) closeMenu();
+    });
+  }
+
+  /* ── Reveal on scroll ──────────────────────────────────────────── */
+  var revealItems = document.querySelectorAll(".reveal");
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    Array.prototype.forEach.call(revealItems, function (el) { el.classList.add("visible"); });
+  } else {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -30px 0px" });
+    Array.prototype.forEach.call(revealItems, function (el) { revealObserver.observe(el); });
+  }
+
+  /* ── Scroll spy del menú ───────────────────────────────────────── */
+  if (navigation) {
+    var navLinks = Array.prototype.slice.call(navigation.querySelectorAll('a[href^="#"]'));
+    var navSections = navLinks.map(function (link) {
+      return document.querySelector(link.getAttribute("href"));
+    }).filter(Boolean);
+
+    var setActiveLink = function () {
+      var probe = window.innerHeight * 0.4;
+      var currentId = "";
+      navSections.forEach(function (section) {
+        var rect = section.getBoundingClientRect();
+        if (rect.top <= probe && rect.bottom > probe) currentId = section.id;
+      });
+      navLinks.forEach(function (link) {
+        var isActive = link.getAttribute("href") === "#" + currentId;
+        link.classList.toggle("active", isActive);
+        if (isActive) link.setAttribute("aria-current", "true");
+        else link.removeAttribute("aria-current");
+      });
+    };
+
+    var spyTicking = false;
+    window.addEventListener("scroll", function () {
+      if (spyTicking) return;
+      spyTicking = true;
+      window.requestAnimationFrame(function () { setActiveLink(); spyTicking = false; });
+    }, { passive: true });
+    window.addEventListener("resize", setActiveLink);
+    setActiveLink();
+  }
+
+  /* ── Scroll depth (listo para medir interés) ───────────────────── */
+  var fired = {};
+  window.addEventListener("scroll", function () {
+    var height = document.documentElement.scrollHeight - window.innerHeight;
+    if (height <= 0) return;
+    var depth = Math.round((window.scrollY / height) * 100);
+    [50, 90].forEach(function (mark) {
+      if (depth >= mark && !fired[mark]) {
+        fired[mark] = true;
+        track("scroll_depth", { percent: mark });
+      }
+    });
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>
